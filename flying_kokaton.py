@@ -35,7 +35,9 @@ def main():
         if key_lst[pg.K_UP]:
             vy = -1
         if key_lst[pg.K_DOWN]:
-            vy = +1
+            vy = 1
+        if key_lst[pg.K_LEFT]:
+            vx += -1
 
         kk_rct.move_ip(vx, vy)
         screen.blit(kk_img, kk_rct)
